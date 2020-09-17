@@ -1,5 +1,6 @@
 .guaranty-section {
   width: 100%;
+  margin-bottom: 50px;
   .guaranty-title {
     margin: 0;
     font-family: Montserrat;
@@ -23,6 +24,7 @@
   @media screen and (min-width: 1680px) {
     padding-right: 183px;
     padding-left: 183px;
+    margin-bottom: 130px;
   }
 }
 .guaranty-container {
@@ -67,7 +69,7 @@
       width: 24px;
       height: 24px;
       background-color: teal;
-      //   background-image: url(/src/images/icons/logo.svg);
+      // background-image: url(/src/images/icons/logo.svg);
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
