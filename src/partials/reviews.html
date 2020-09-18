@@ -1,25 +1,34 @@
 <section class="reviews-section">
   <h2 class="reviews-title">Отзывы выпускников</h2>
   <div class="reviews-main-container">
-    <div><img src="/images/Ellipse 8.jpg" alt="Фото пользователя" /></div>
-    <a href="https://vk.com/">
-      <svg>
-        <use href="/images/icons/sprite.svg#icon-vk"></use>
-      </svg>
-    </a>
-    <p class="name-orange-text">Тоня Кучеровская</p>
-    <p class="reviews-adout-person">
-      Выпуск 2015-го года, Національний університет біоресурсів і
-      природокористування України
-    </p>
-    <p class="reviews-text">
-      За короткий час занять з Оленою я опанувала граматику і поповнила свій
-      зовсім пустий словниковий запас. З першого ж заняття я зрозуміла, що
-      знаходжуся у своїй тарілці. Ми з Оленою стали друзями, тому що її справді
-      хвилювала моя успішність. Вона стала для мене авторитетом, проте я не
-      тремтіла на уроках, маючи страх зробити найменшу помилку. Зараз я можу
-      похизуватись тим, що я студен ...<span>Читать дальше</span>
-    </p>
+    <div class="reveiws-photo-link">
+      <img
+        src="/images/Ellipse 8.jpg"
+        alt="Фото пользователя"
+        class="reviews-photo-people"
+      />
+      <a href="https://vk.com/" class="reviews-link">
+        <svg>
+          <use href="/images/icons/sprite.svg#icon-vk"></use>
+        </svg>
+      </a>
+    </div>
+    <div>
+      <p class="name-orange-text">Тоня Кучеровская</p>
+      <p class="reviews-adout-person">
+        Выпуск 2015-го года, Національний університет біоресурсів і
+        природокористування України
+      </p>
+      <p class="reviews-text">
+        За короткий час занять з Оленою я опанувала граматику і поповнила свій
+        зовсім пустий словниковий запас. З першого ж заняття я зрозуміла, що
+        знаходжуся у своїй тарілці. Ми з Оленою стали друзями, тому що її
+        справді хвилювала моя успішність. Вона стала для мене авторитетом, проте
+        я не тремтіла на уроках, маючи страх зробити найменшу помилку. Зараз я
+        можу похизуватись тим, що я студен ...
+        <span class="reviews-orange-link">Читать дальше</span>
+      </p>
+    </div>
   </div>
   <div class="reviews-list-container">
     <ul class="reviews-list list">
@@ -46,14 +55,16 @@
       </li>
     </ul>
   </div>
-  <button class="reviews-button-left">
-    <svg>
-      <use href="/images/icons/sprite.svg#icon-arrow-left"></use>
-    </svg>
-  </button>
-  <button class="reviews-button-right">
-    <svg>
-      <use href="/images/icons/sprite.svg#icon-arrow-right"></use>
-    </svg>
-  </button>
+  <div class="reviews-button-container">
+    <button class="reviews-button-left">
+      <svg class="arrow">
+        <use href="/images/icons/sprite.svg#icon-arrow-left"></use>
+      </svg>
+    </button>
+    <button class="reviews-button-right">
+      <svg class="arrow">
+        <use href="/images/icons/sprite.svg#icon-arrow-right"></use>
+      </svg>
+    </button>
+  </div>
 </section>
