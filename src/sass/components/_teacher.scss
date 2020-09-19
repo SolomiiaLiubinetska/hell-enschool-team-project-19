@@ -28,15 +28,43 @@ img {
     display: block;
 }
 
-.teacher{
+.teacher{ 
+
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
 
-    
+    @media screen and (min-width: 1680px) {
+        padding: 180px;
+         
+    }
 
-.teacher-name {
+}
+
+.teach-div {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+
+.tech-div {
+    width: 279px;
+
+    @media screen and (min-width: 768px) {
+        width: 408px;
+        margin: 40px;
+    } 
+
+    @media screen and (min-width: 1680px) {
+        width: 641px;
+    }
+}
+
+
+
+.teacher-name {    
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
@@ -44,30 +72,45 @@ img {
     letter-spacing: 0.08em;
    
     border-bottom: 1px solid #ececec;
-
-}
 }
 
 .teacher-element {
+
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.06em;
+    
 
     color: $main-text-color;
    
 }
 
+.teacher-img {
+    height: auto;
+    width: 100%;
+}
+
 .teacher-item {
+    
     margin-bottom: 43px;
 }
 
 .teacher-icon {
     width: 17px; 
     height: 14px; 
-    color: $accent-color;
+    fill: $accent-color;
 
+}
+
+.teacher-item::before {
+    content: "";
+ 
+    width: 20px;
+    height: 24px;
+    background-image: url(/images/icons/features-1.svg);
+    
 }
 
 .teacher-text {
