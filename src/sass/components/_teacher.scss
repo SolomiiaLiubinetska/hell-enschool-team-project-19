@@ -1,67 +1,42 @@
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-body {
-    font-family: Montserrat, sans-serif;
-    background-color: $wightColor;
-    color: $main-text-color;
-}
-
-.list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    display: block;
-}
 
 .teacher{ 
-
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (min-width: 1680px) {
-        padding: 180px;
-         
-    }
 
+
+    @media screen and (min-width: 768px) {
+        width: 688px;
+        margin-top: 50px;
+    } 
+
+    @media screen and (min-width: 1680px) {
+        width: 1208px;
+        margin-top: 130px;
+    }
 }
 
 .teach-div {
     @media screen and (min-width: 768px) {
         display: flex;
     }
+
 }
 
-
 .tech-div {
-    width: 279px;
-
-    @media screen and (min-width: 768px) {
-        width: 408px;
-        margin: 40px;
-    } 
-
+    height: 100%;
+    
     @media screen and (min-width: 1680px) {
         width: 641px;
+       margin-left: 30px; 
     }
 }
 
+.teacher-title {
+    margin-bottom: 50px;
+}
 
 
 .teacher-name {    
@@ -72,6 +47,8 @@ img {
     letter-spacing: 0.08em;
    
     border-bottom: 1px solid #ececec;
+
+    margin-bottom: 45px;
 }
 
 .teacher-element {
@@ -81,37 +58,46 @@ img {
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.06em;
-    
 
     color: $main-text-color;
+
+    @media screen and (min-width: 1680px) {
+        line-height: 19px;
+    }
    
 }
 
 .teacher-img {
-    height: auto;
-    width: 100%;
+    width: 243px;
+    height: 305px;
+    margin: 20px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+        margin-right: 40px;
+    }
+   
+    @media screen and (min-width: 1680px) {
+        width: 530px;
+        height: 663px;
+    }
 }
 
 .teacher-item {
-    
+    display: inline-flex;
+    align-items: center;
     margin-bottom: 43px;
 }
 
 .teacher-icon {
     width: 17px; 
     height: 14px; 
+    margin-right: 10px;
     fill: $accent-color;
 
 }
 
-.teacher-item::before {
-    content: "";
- 
-    width: 20px;
-    height: 24px;
-    background-image: url(/images/icons/features-1.svg);
-    
-}
+
 
 .teacher-text {
     
@@ -121,6 +107,10 @@ font-size: 12px;
 line-height: 20px;
 
 color: $primary-text-color;
+
+@media screen and (min-width: 1680px) {
+    line-height: 28px;
+}
 }
 
 .teach-education {
