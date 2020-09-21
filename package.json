@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "homepage": "https://SolomiiaLiubinetska.com/hell-enschool-team-project-19",
+    "homepage": "https://SolomiiaLiubinetska.github.io/hell-enschool-team-project-19",
     "scripts": {
         "dev": "parcel src/*.html",
         "build": "parcel build src/*.html",
