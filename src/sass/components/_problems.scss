@@ -4,11 +4,13 @@ li {
 
 .section-problems {
     width: 1680px;
+    position: relative;
     @media screen and (min-width: 1px) and (max-width: 767px) {
         width: 320px;
     }
     @media screen and (min-width: 768px) and (max-width: 1679px) {
         width: 768px;
+        margin-bottom: 30px;
     }
 }
 
@@ -100,10 +102,10 @@ li {
     width: 1314px;
     height: 362px;
     left: 10%;
-    position: absolute;
     top: 85%;
     background-color: $wightColor;
-    @media screen and (min-width: 1px) and (max-width: 767px) {
+    position: absolute;
+    @media screen and (max-width: 767px) {
         width: 280px;
         height: 488px;
         padding-top: 20px;
@@ -111,13 +113,13 @@ li {
         padding-left: 30px;
         padding-right: 14px;
         left: 5%;
-        top: 175%;
+        top: 460px;
     }
     @media screen and (min-width: 768px) and (max-width: 1679px) {
         width: 688px;
         height: 303px;
         left: 5.5%;
-        top: 103%;
+        top: 270px;
     }
 }
 
