@@ -1,37 +1,64 @@
-<header class="header-page">
+<header class="header-page is-open">
     <div class="header-container">
         <div class="header-logo-container">
-            <a class="header-logo-link" href="#">
-                <span class="header-logo" lang="en">Hell</span>
-                <svg class="header-logo-icon" width="22" height="30">
-                <use
-                  href="./images/icons/sprite.svg#icon-logo"></use></svg>
-                <span class="header-logo-part" lang="en">EN</span>
-                <div>
-                    <span class="header-logo-second">Адский </span><span class="header-logo-second-part">английский</span>
+            <a class="header-logo-link" href="/index.html">
+                <div class="header-logo-none"> <span class="header-logo" lang="en">Hell</span>
+                    <svg class="header-logo-icon" width="22" height="30">
+                    <use
+                      href="./images/icons/sprite.svg#icon-logo"></use></svg>
+                    <span class="header-logo-part" lang="en">   EN   </span>
+                    <div class="header-logo-sec-part">
+                        <span class="header-logo-second">Адский </span><span class="header-logo-second-part">английский</span>
+                    </div>
                 </div>
+                <img srcset="./images/header/logo.png 1x, 
+                ./images/header/logo@2x.png 2x" class="header-iconlogo" src="./images/header/logo-mobile@1x.png" alt="логотип" width="80" />
+                <img srcset="./images/header/logo-w.png 1x, 
+                ./images/header/logow@2x.png 2x" class="header-iconlogo-wight" src="./images/header/logo-mobile-w@1x.png" alt="логотип" width="80" />
+
 
             </a>
         </div>
+        <div class="header-menu-container" id="header-menu-container" data-menu>
+            <nav class="header-nav">
+                <img srcset="./images/header/logo-w.png 1x, 
+                ./images/header/logow@2x.png 2x" class="header-iconlogo-wight" src="./images/header/logo-mobile-w@1x.png" alt="логотип" width="80" />
 
-        <nav class="header-nav">
-            <ul class="header-items list">
-                <li class="header-item">
-                    <a class="header-nav-link" href="#">Программы обучения</a>
-                </li>
-                <li class="header-item">
-                    <a class="header-nav-link" href="#">О нас</a>
-                </li>
-                <li class="header-item">
-                    <a class="header-nav-link" href="#">Варианты обучения</a>
-                </li>
-                <li class="header-item">
-                    <a class="header-nav-link" href="#">Контакты</a>
-                </li>
-            </ul>
+                <ul class="header-items list">
+                    <li class="header-item">
+                        <a class="header-nav-link" href="/index.html">Программы обучения</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-nav-link header-link-current" href="/index.html">О нас</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-nav-link" href="/index.html">Варианты обучения</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-nav-link" href="/index.html">Контакты</a>
+                    </li>
+                </ul>
 
-        </nav>
-        <button class="header-btn">Консультация по телефону</button>
+            </nav>
+            <button class="header-btn">Консультация по телефону</button>
+
+        </div>
+
+
+        <button type="button" class="header-menu-button is-open" aria-expanded="false" aria-controls="header-menu-container" data-menu-button>
+                <svg width="40" height="40" aria-label="Бургер меню">
+                    <use class="header-icon-cross" href="./images/icons/sprite.svg#icon-menu"></use>
+                  <use class="header-icon-menu" href="./images/icons/sprite.svg#icon-cross"></use>
+                  
+                  
+                </svg>
+              </button>
+
+
+
 
     </div>
+
+
+
 </header>
