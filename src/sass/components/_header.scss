@@ -7,6 +7,7 @@
     font-family: Montserrat;
     font-style: normal;
     display: flex;
+    justify-content: baseline;
     width: 100%;
     @media screen and (max-width: 319px) {
         width: 100%;
@@ -67,7 +68,8 @@
     }
     .header-logo-containrt {
         position: relative;
-        width: 128px;
+        display: inline-flex;
+        width: 300px;
         height: 25px;
     }
     .header-logo-sec-part {
@@ -76,6 +78,9 @@
     .header-logo-icon {
         position: absolute;
         fill: $accent-color;
+    }
+    .header-logo-none {
+        display: none;
     }
 }
 
@@ -90,7 +95,10 @@
         margin-right: 239px;
     }
     @media screen and (min-width: 1680px) {
-        display: none;
+        display: flex;
+        width: 128px;
+        height: 45px;
+        margin-top: 15px;
     }
 }
 

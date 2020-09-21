@@ -2,159 +2,167 @@ $second-bg-color: #111518;
 $third-bg-color: #f1f1f1;
 $fourth-text-color: #ffffff;
 .header-logo,
-    .header-logo-part {
-        font-style: normal;
-        font-weight: 800;
-        font-size: 26px;
-        line-height: 1.231;
-        letter-spacing: 0.04em;
-        color: $main-text-color;
-    }
-    
-    .header-logo-part {
-        margin-left: 28px;
-    }
-    
-    .header-logo-second,
-    .header-logo-second-part {
-        font-weight: bold;
-        font-size: 8px;
-        line-height: 1.25;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-    }
-    
-    .header-logo-second {
-        color: $accent-color;
-    }
-    
-    .header-logo-second-part {
-        color: $main-text-color
-    }
-    
-    .header-logo-containrt {
-        position: relative;
-    }
-    
-    .header-logo-icon {
-        position: absolute;
-        fill: $accent-color;
-    }
+.header-logo-part {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.231;
+    letter-spacing: 0.04em;
+    color: $main-text-color;
+}
 
+.header-logo-part {
+    margin-left: 28px;
+}
+
+.header-logo-second,
+.header-logo-second-part {
+    font-weight: bold;
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.header-logo-second {
+    color: $accent-color;
+}
+
+.header-logo-second-part {
+    color: $main-text-color
+}
+
+.header-logo-containrt {
+    position: relative;
+}
+
+.header-logo-icon {
+    position: absolute;
+    fill: $accent-color;
+}
 
 @mixin mobile {
-    @media screen and (max-width: 767px) { @content; }
-  }
-  @mixin tablet {
-    @media screen and (min-width: 768px) and (max-width:1679px) { @content; }
-  }
-  @mixin desktop {
-    @media (min-width: 1680px) { @content; }
-  }
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 768px) and (max-width: 1679px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1680px) {
+        @content;
+    }
+}
+
 $primary-white-color: #ffffff;
 $primary-text-color: #111518;
 $secondary-text-color: #B9B9B9;
 $accent-color: #FF6B09;
-.footer-bg{
+.footer-bg {
     width: 100%;
     background-color: #000000;
-   background-image: linear-gradient(to right, #00000090, #00000090), url(/images/footer/footer-background-mobile.jpg);
+    background-image: linear-gradient(to right, #00000090, #00000090), url(/images/footer/footer-background-mobile.jpg);
     background-repeat: no-repeat;
-   background-size: contain;
-   @media screen and (min-width: 320px) and (max-width: 767px){
-       background-size: cover;
-       background-position: center;
-   }
-   
-   @include tablet{
-    background-image: linear-gradient(to right, #00000090, #00000090), url(/images/footer/footer-background-tablet.jpg);
-    }
-    @media screen and (min-width: 768px) and (max-width: 1679px){
+    background-size: contain;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
         background-size: cover;
         background-position: center;
     }
-    @include desktop{
+    @include tablet {
+        background-image: linear-gradient(to right, #00000090, #00000090), url(/images/footer/footer-background-tablet.jpg);
+    }
+    @media screen and (min-width: 768px) and (max-width: 1679px) {
+        background-size: cover;
+        background-position: center;
+    }
+    @include desktop {
         background-image: linear-gradient(to right, #00000090, #00000090), url(/images/footer/footer-background-desktop.jpg);
-    background-size: cover;
-    background-position: center;
+        background-size: cover;
+        background-position: center;
     }
 }
-.footer-container{
+
+.footer-container {
     padding-bottom: 50px;
     padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
-    @include tablet{
-          padding-top: 50px;
-          padding-bottom: 70px;
-        }
-         @include desktop{
-            padding-top: 100px;
-            padding-bottom: 60px;
-         }
+    @include tablet {
+        padding-top: 50px;
+        padding-bottom: 70px;
     }
-.footer-orange{
+    @include desktop {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+}
+
+.footer-orange {
     color: $accent-color;
 }
-.footer-text{
-display: block;
-font-family: Montserrat;
-color: $primary-white-color;
-font-style: normal;
-font-weight: 800;
-font-size: 14px;
-line-height: 136%;
-letter-spacing: 0.03em;
-margin-bottom: 30px;
-max-width: 280px;
-margin-right: auto;
-    margin-left: auto;
-    @include tablet{
-    font-size: 26px;
-    line-height: 130%;
-    max-width: 690px;
-    
-    }
-    @include desktop{
-font-size: 46px;
-line-height: 130%;
-letter-spacing: 0.03em;
-margin-bottom: 50px;
-  max-width: 1090px;
-    
 
-}
-}
-.footer-text-secondary{
- display: block;
- margin-left: auto;
- margin-right: auto;
- font-family: Montserrat;
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 1.2;
-letter-spacing: 0.08em;
-color: $primary-white-color;
-width: 100%;
-margin-bottom: 30px;
-max-width: 280px;
-@include tablet{
+.footer-text {
+    display: block;
+    font-family: Montserrat;
+    color: $primary-white-color;
+    font-style: normal;
+    font-weight: 800;
     font-size: 14px;
-    
-    max-width: 690px;
-    margin-bottom: 40px;
-    max-width: 450px;
+    line-height: 136%;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+    max-width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+    @include tablet {
+        font-size: 26px;
+        line-height: 130%;
+        max-width: 690px;
     }
-    @include desktop{
-    max-width: 1090px;
-    font-size: 30px;
-    
-    margin-bottom: 56px;
+    @include desktop {
+        font-size: 46px;
+        color: $primary-white-color;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+        max-width: 1090px;
+    }
 }
+
+.footer-text-secondary {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    color: $primary-white-color;
+    width: 100%;
+    margin-bottom: 30px;
+    max-width: 280px;
+    @include tablet {
+        font-size: 14px;
+        max-width: 690px;
+        margin-bottom: 40px;
+        max-width: 450px;
+    }
+    @include desktop {
+        max-width: 1090px;
+        font-size: 30px;
+        margin-bottom: 56px;
+    }
 }
-.footer-form-text{
+
+.footer-form-text {
     display: block;
     background-color: transparent;
     font-style: normal;
@@ -163,40 +171,40 @@ max-width: 280px;
     line-height: 1.2;
     letter-spacing: 0.08em;
     color: $primary-white-color;
-    &::placeholder{
+    &::placeholder {
         color: $primary-white-color;
-        @include desktop{
+        @include desktop {
             font-size: 20px;
             line-height: 1.2;
         }
     }
     border: 1px solid $primary-white-color;
-     width: 100%;
+    width: 100%;
     height: 50px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 28px;
     @media screen and (min-width: 320px) {
-        width: 280px;  
+        width: 280px;
     }
-    @include tablet{
+    @include tablet {
         width: 390px;
         height: 50px;
     }
-    @include desktop{
+    @include desktop {
         width: 480px;
         height: 70px;
     }
-
 }
-.footer-name{
- margin-bottom: 20px;
- @include desktop{
-     margin-bottom: 30px;
- }
-}
-.button-footer{
 
+.footer-name {
+    margin-bottom: 20px;
+    @include desktop {
+        margin-bottom: 30px;
+    }
+}
+
+.button-footer {
     padding: 0;
     height: 50px;
     width: 100%;
@@ -204,164 +212,162 @@ max-width: 280px;
     background-color: $accent-color;
     color: $primary-white-color;
     font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 1.2;
-letter-spacing: 0.08em;
-text-transform: uppercase;
-transition: linear 250ms; 
-@media screen and (min-width: 320px) {
-    width: 280px;
-     
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: linear 250ms;
+    @media screen and (min-width: 320px) {
+        width: 280px;
+    }
+    @include tablet {
+        margin-top: 30px;
+        width: 260px;
+    }
+    @include desktop {
+        margin-top: 80px;
+        width: 355px;
+        height: 75px;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+    &:hover,
+    &:focus {
+        background-color: transparent;
+        border: 2px solid $accent-color;
+        color: $accent-color;
+    }
 }
-@include tablet{
-    margin-top: 30px;
-    width: 260px;
-    
-    
-}
-@include desktop{
-    margin-top: 80px;
-    width: 355px;
-    height: 75px;
-    font-size: 14px;
-   line-height: 1.2;
-}
- &:hover,
- &:focus{
-     background-color: transparent;
-     border: 2px solid $accent-color;
-     color: $accent-color;
- }
 
-}
-.mobile-footer{
+.mobile-footer {
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.08em;
-    color: $primary-text-color; 
-    @include tablet{
+    color: $primary-text-color;
+    @include tablet {
         font-size: 20px;
         line-height: 1.2;
     }
-    @include desktop{
+    @include desktop {
         font-size: 30px;
         line-height: 1.2;
     }
 }
-.footer-contact-container{
-    background-color:$primary-white-color;
+
+.footer-contact-container {
+    background-color: $primary-white-color;
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include tablet{
-     padding-top: 40px;
-     padding-bottom: 40px;
-     flex-direction: row;
-     justify-content: space-between;
-     padding-left: 60px;
-     padding-right: 60px;
-     
+    @include tablet {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 60px;
+        padding-right: 60px;
     }
-    @include desktop{
+    @include desktop {
         padding-left: 180px;
         padding-right: 0;
         justify-content: flex-start;
         flex-direction: row;
     }
 }
-.flex-footer{
+
+.flex-footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    @include tablet{
-    flex-direction: row;
+    @include tablet {
+        flex-direction: row;
     }
-    @include desktop{
-        flex-direction: row;  
+    @include desktop {
+        flex-direction: row;
     }
 }
-.footer{
+
+.footer {
     background-color: $primary-text-color;
     width: 100%;
-    padding-top: 20px ;
+    padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
-    @include tablet{
+    @include tablet {
         font-size: 20px;
         line-height: 1.2;
         display: flex;
         justify-content: space-between;
         padding-left: 60px;
-
     }
-    @include desktop{
-       padding-left: 180px;
-       font-size: 20px;
+    @include desktop {
+        padding-left: 180px;
+        font-size: 20px;
         line-height: 1.2;
         display: flex;
         justify-content: space-between;
-   }
+    }
 }
-.footer-text{
+
+.footer-text-suport {
     font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 2;
-color: $secondary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2;
+    color: $secondary-text-color;
 }
-.svg-telefone-footer{
+
+.svg-telefone-footer {
     width: 20px;
     height: 20px;
     margin-right: 10px;
-    @include tablet{
+    @include tablet {
         width: 25px;
         height: 25px;
     }
-    @include desktop{
+    @include desktop {
         width: 30px;
         height: 30px;
     }
-
 }
-.instagram-footer{
+
+.instagram-footer {
     width: 40px;
     height: 40px;
-   
 }
-.svg-logo-footer{
+
+.svg-logo-footer {
     min-width: 85px;
     height: 30px;
-    @include tablet{
-       min-width: 129px;
-       height: 45px;
+    @include tablet {
+        min-width: 129px;
+        height: 45px;
     }
-   
 }
-.footer-telefone{
+
+.footer-telefone {
     display: flex;
     justify-content: center;
     align-items: center;
-   
-    @include mobile{
-     margin-bottom: 30px; 
-     
+    @include mobile {
+        margin-bottom: 30px;
     }
-    @include tablet{
+    @include tablet {
         height: 40px;
-     margin-right: 24px;
-     border: 1px solid #B9B9B9;
-     border-top: none;
-     border-bottom: none;
-     border-left: none;
-     padding-right: 24px;
+        margin-right: 24px;
+        border: 1px solid #B9B9B9;
+        border-top: none;
+        border-bottom: none;
+        border-left: none;
+        padding-right: 24px;
     }
-    @include desktop{
+    @include desktop {
         padding-right: 16px;
         height: 40px;
         margin-right: 24px;
@@ -371,14 +377,14 @@ color: $secondary-text-color;
         border-left: none;
     }
 }
-.footer-logo{
-    margin-bottom: 20px;
-   @include tablet{
-    margin-bottom: 0;
-    }
-    @include desktop{
-    margin-right: 290px;
-    margin-bottom: 0;
-    }
 
+.footer-logo {
+    margin-bottom: 20px;
+    @include tablet {
+        margin-bottom: 0;
+    }
+    @include desktop {
+        margin-right: 290px;
+        margin-bottom: 0;
+    }
 }
