@@ -267,7 +267,7 @@ ul {
     left: 200px;
     bottom: 50px;
 
-    @media screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
         display: block;
         width: 384px;
         height: 280px;
@@ -285,3 +285,9 @@ ul {
         left: -5%;                
     }
 }
+
+.program-span {
+    color: $secondary-text-color;
+    display: none;
+}
+
